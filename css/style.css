@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.close-menu,
+.open-menu {
+  position: absolute;
+  cursor: pointer;
+  display: none;
+}
+
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+
+#check {
+  display: none;
+}
+
+.menu li {
+  transition: 0.7s;
+}
+
+.menu li:hover {
+  transform: scale(1.2);
+}
+
+.video {
+  filter: brightness(0.7);
+}
+
+.home-button {
+  transition: transform 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
+}
+
+.home-button:hover {
+  transform: translateY(-8px);
+  border: 4px solid transparent;
+  box-shadow: 10px 10px 5px lightblue;
+}
+
+.card-container {
+  transition: 0.5s;
+}
+
+.card-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.4);
+}
+
+.card-icon {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes entrance-animation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.entrance-effect {
+  animation: entrance-animation 1s linear;
+}
+
+.service-card-overlay {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.service-card:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.4);
+}
+
+.service-card:hover .service-card-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(12, 11, 11, 0.3);
+}
+
+
+
+@media (max-width: 800px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 73%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+
+  .menu li {
+    margin-top: 40px;
+  }
+
+  .menu li a {
+    padding: 10px;
+  }
+
+  .close-menu,
+  .open-menu {
+    display: block;
+  }
+
+  #check:checked ~ .menu {
+    right: 0;
+  }
+}

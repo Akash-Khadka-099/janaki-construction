@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="relative">
+      <nav class="w-full absolute z-20 top-0 left-0 dark:border-gray-600">
+        <ul
+          class="navigation max-w-[90vw] flex flex-wrap justify-between items-center relative mx-auto py-8"
+        >
+          <a class="logo" href="#">
+            <h3 class="font-bold text-2xl">LOGO</h3>
+          </a>
+          <input type="checkbox" id="check" />
+
+          <span
+            class="menu flex [&>li]:pl-8 [&>li>a]:text-white [&>li>a]:text-center [&>li>a]:relative [&>li>a]:transition [&>li>a]:duration-200 [&>li>a]:ease-in-out [&>li>a]:font-medium [&>li>a]:text-lg"
+          >
+            <li><a href="../index.html">Home</a></li>
+            <li>
+              <a class="!text-red-400 !font-extrabold" href="#">Projects</a>
+            </li>
+            <li>
+              <a href="./services.html">Services</a>
+            </li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+
+            <li><a href="./contacts.html">Contact Us</a></li>
+
+            <label for="check" class="close-menu">X</label>
+          </span>
+
+          <label for="check" class="open-menu">Menu</label>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="relative text-white overflow-hidden" style="height: 80vh">
+      <div class="absolute inset-0">
+        <img
+          src="../images/project.jpg"
+          alt="Background Image"
+          class="object-cover object-center w-full h-9/10"
+        />
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+      </div>
+
+      <div
+        class="relative z-10 flex flex-col justify-center items-center h-full text-center"
+      >
+        <h1 class="text-5xl font-bold leading-tight mb-4">
+          Explore Our Projects
+        </h1>
+        <p class="text-lg text-gray-300 mb-8">
+          Uncover Exceptional Construction Projects
+        </p>
+        <a
+          href="#project"
+          class="bg-red-400 text-gray-900 hover:bg-red-300 hover:-translate-y-1 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          >View Projects</a
+        >
+      </div>
+    </div>
+
+    <!-- projects from here  -->
+    <section
+      id="project"
+      class="container mx-auto p-10 md:py-20 px-0 md:p-10 md:px-0"
+    >
+      <section
+        class="relative px-10 md:p-0 transform duration-500 hover:shadow-2xl cursor-pointer hover:-translate-y-1"
+      >
+        <img class="xl:max-w-6xl" src="../images/house2.jpg" alt="" />
+        <div
+          class="content bg-white p-2 pt-8 md:p-12 pb-12 lg:max-w-lg w-full lg:absolute top-48 right-5"
+        >
+          <div class="flex justify-between font-bold text-sm">
+            <p>Product Review</p>
+            <p class="text-gray-400">17th March, 2021</p>
+          </div>
+          <h2 class="text-3xl font-semibold mt-4 md:mt-10">
+            Coffee From Heaven
+          </h2>
+          <p
+            class="my-3 text-justify font-medium text-gray-700 leading-relaxed"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            aperiam nulla cupiditate saepe sed quis veritatis minus rem adipisci
+            aliquid.
+          </p>
+          <button
+            class="mt-2 md:mt-5 p-3 px-5 bg-red-500 rounded-lg text-white font-bold text-sm duration-300 hover:shadow-lg shadow-red-100 hover:bg-red-600 hover:scale-y-105 hover:-translate-y-1"
+          >
+            Read More
+          </button>
+        </div>
+      </section>
+    </section>
+
+    <!-- next section  -->
+    <section
+      id="project"
+      class="container mx-auto p-10 md:py-20 px-0 md:p-10 md:px-0"
+    >
+      <section
+        class="relative px-10 md:p-0 transform duration-500 hover:shadow-2xl cursor-pointer hover:-translate-y-1"
+      >
+        <img
+          class="xl:max-w-6xl float-right"
+          src="../images/house2.jpg"
+          alt=""
+        />
+        <div
+          class="content bg-white p-2 pt-8 md:p-12 pb-12 lg:max-w-lg w-full lg:absolute top-48 left-5"
+        >
+          <div class="flex justify-between font-bold text-sm">
+            <p>Product Review</p>
+            <p class="text-gray-400">17th March, 2021</p>
+          </div>
+          <h2 class="text-3xl font-semibold mt-4 md:mt-10">
+            Coffee From Heaven
+          </h2>
+          <p
+            class="my-3 text-justify font-medium text-gray-700 leading-relaxed"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            aperiam nulla cupiditate saepe sed quis veritatis minus rem adipisci
+            aliquid.
+          </p>
+          <button
+            class="mt-2 md:mt-5 p-3 px-5 bg-red-500 rounded-lg text-white font-bold text-sm duration-300 hover:shadow-lg shadow-red-100 hover:bg-red-600 hover:scale-y-105 hover:-translate-y-1"
+          >
+            Read More
+          </button>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
